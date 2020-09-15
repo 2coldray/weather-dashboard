@@ -2,3 +2,11 @@
     text-align: center; 
     display: block;
 }
+
+.fas {
+    color: white;
+}
+
+.btn {
+    background-color: dodgerblue;
+}
