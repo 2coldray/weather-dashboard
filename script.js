@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    console.log("Hello");
+    console.log("I'm working");
 
 //DOM Variables
 var userInput = $("#cityInput");
@@ -9,8 +9,8 @@ var currentForecast = $("#current-forecast");
 var weekForecast = $("#forecast_div");
 
 //JS Variables
-var apiKey = "ea2e8a81e35136522206b76cc7234d3f";
-var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=Atlanta&appid=f64cf3ca5c79a43105f048e67f3d1a6a";
+var apiKey = "f64cf3ca5c79a43105f048e67f3d1a6a";
+var queryURL = "https://api.openweathermap.org/data/2.5/weather?" + "q=Atlanta&appid=" + apiKey;
 
 //Function Definitions
 //Practice Ajax Call First
@@ -24,4 +24,8 @@ $.ajax({
 //Function calls
 
 //Event Listeners
+searchBtn.on("click", function() {
+    console.log("I've Been clicked!");
+});
+
 }); 
