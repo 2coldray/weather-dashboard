@@ -24,7 +24,8 @@ $.ajax({
     currentForecast.text("Temperature: " + response.main.temp + " F");
     console.log(response.main.humidity);
     currentForecast.text("Humidity: " + response.main.humidity + " %");
-    console.log(response)
+    console.log(response.wind.speed);
+    currentForecast.text("Wind Speed: " + response.wind.speed + " MPH")
 });
 
 //2nd Ajax Call for Current Weather Forecast
