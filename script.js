@@ -25,11 +25,23 @@ $.ajax({
     console.log(response.main.humidity);
     currentForecast.text("Humidity: " + response.main.humidity + " %");
     console.log(response.wind.speed);
-    currentForecast.text("Wind Speed: " + response.wind.speed + " MPH")
+    currentForecast.text("Wind Speed: " + response.wind.speed + " MPH");
+    console.log(response);
 });
 
 //2nd Ajax Call for Current Weather Forecast
-var uvURL = "h"
+//http://api.openweathermap.org/data/2.5/uvi?appid={appid}&lat={lat}&lon={lon}
+
+var uvURL = "https://api.openweathermap.org/data/2.5/uvi?appid=" + apiKey + "&lat=33.75&lon=-84.39";
+
+$.ajax({
+    url : uvURL,
+    method : "GET"
+}).then(function(response){
+    console.log(response);
+    console.log(response.value)
+    currentForecast.text("UV Index: " + response.value)
+});
 
 //Function calls
 
