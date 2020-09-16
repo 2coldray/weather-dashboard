@@ -10,3 +10,15 @@
 .btn {
     background-color: dodgerblue;
 }
+
+.high {
+    background-color: red;
+}
+
+.medium {
+    background-color: greenyellow;
+}
+
+.low {
+    background-color: dodgerblue;
+}
