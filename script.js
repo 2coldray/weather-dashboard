@@ -11,8 +11,9 @@ var weekForecast = $("#forecast_div");
 //JS Variables
 var apiKey = "f64cf3ca5c79a43105f048e67f3d1a6a";
 var queryURL = "https://api.openweathermap.org/data/2.5/weather?" + "q=Atlanta&units=imperial&appid=" + apiKey;
-//New Divs to append to DOM
 
+//New Divs to append to DOM
+var city = [];
 
 //Function Definitions
 
