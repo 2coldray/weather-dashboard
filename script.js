@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  console.log("I'm working");
 
   //DOM Variables
   var userInput = $("#cityInput");
@@ -12,11 +11,9 @@ $(document).ready(function () {
 
   //Event Listeners
   searchBtn.on("click", function (event) {
-    // console.log("I've Been clicked!");
     //Capture User Input
     event.preventDefault();
     var userInput = $("#cityInput").val().trim();
-    // console.log(userInput);
     //JS Variables
     var apiKey = "f64cf3ca5c79a43105f048e67f3d1a6a";
     var queryURL =
@@ -47,7 +44,6 @@ $(document).ready(function () {
       temp.text("Temperature: " + response.main.temp + " F");
       humid.text("Humidity: " + response.main.humidity + " %");
       speed.text("Wind Speed: " + response.wind.speed + " MPH");
-      //   console.log(response);
       //Add click event for button
 
       //Append
@@ -56,7 +52,6 @@ $(document).ready(function () {
       currentForecast.append(humid);
       currentForecast.append(speed);
       savedCity.push(userInput);
-      console.log(userInput);
 
       for (var i = 0; i < savedCity.length; i++) {
         cityButtons.text(savedCity[i]);
@@ -85,7 +80,6 @@ $(document).ready(function () {
         index.empty();
 
         //Add content
-        // console.log(response);
         index.text("UV Index: " + response.value);
         if (response.value < 4) {
           index.addClass("low");
@@ -99,7 +93,6 @@ $(document).ready(function () {
         currentForecast.append(index);
 
         //Final Ajax Call
-        //api.openweathermap.org/data/2.5/forecast?q={city name}&appid={your api key}
         var forecastURL =
           "https://api.openweathermap.org/data/2.5/forecast?q=" +
           userInput +
@@ -110,10 +103,8 @@ $(document).ready(function () {
           url: forecastURL,
           method: "GET",
         }).then(function (response) {
-          //   console.log(response);
           weekForecast.empty();
           for (var i = 0; i < response.list.length; i = i + 8) {
-            // console.log(response.list[i]);
             //Create Element
             var card = $("<div>").addClass("col border p- 1");
             var results = $("<div>").text(response.list[i]);

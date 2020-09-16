@@ -14,7 +14,7 @@ The Weather Dashboard application allows users to check the weather forecast for
 
 ## Installation
 
-1. Go to the website: 
+1. Go to the website: https://2coldray.github.io/weather-dashboard/ 
 
 2. Enter a city in the input field.
 
