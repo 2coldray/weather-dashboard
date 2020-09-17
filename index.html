@@ -36,24 +36,21 @@
       <div class="row mt-3">
         <div class="col-4">
           <h2>Search for a City:</h2>
-          <div class="input-group mb-3">
+          <form class="input-group mb-3" id="search">
             <input
               type="text"
               class="form-control"
               placeholder="City"
               id="cityInput"
+              required
             />
             <div class="input-group-append">
-              <button
-                class="btn btn-outline-secondary"
-                type="button"
-                id="search"
-              >
+              <button class="btn btn-outline-secondary" type="submit">
                 <i class="fas fa-search"></i>
               </button>
             </div>
-          </div>
-          <p id="resultsHere"></p>
+          </form>
+          <div id="resultsHere" class="list-group"></div>
         </div>
 
         <div class="col-8">
