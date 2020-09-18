@@ -7,6 +7,7 @@
 * [Usage](#usage)
 * [Credits](#credits)
 * [License](#license)
+* [Badges](#badges)
 
 ## Description
 
@@ -37,6 +38,12 @@ Moment.js documentation: https://momentjs.com/docs/#/parsing/string-format/
 
 OpenWeatherApi documentation: https://openweathermap.org/api
 
+Contact Information for Rayshawn Bray
+
+Email: raybray219@yahoo.com
+LinkedIn: www.linkedin.com/in/rayshawnbray
+Github: https://github.com/2coldray
+
 ## License
 
 MIT License
@@ -60,3 +67,10 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Badges
+![badmath](https://img.shields.io/badge/HTML-100%25-green)
+
+![badmath](https://img.shields.io/badge/CSS-100%25-green)
+
+![badmath](https://img.shields.io/badge/Javascript-100%25-green)
